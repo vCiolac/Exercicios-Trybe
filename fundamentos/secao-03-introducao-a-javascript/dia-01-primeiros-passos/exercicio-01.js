@@ -103,3 +103,45 @@ if ( a % 2 === 1 || b % 2 === 1 || c % 2 === 1 ) {
 } else {
   console.log(false)
 }
+
+let custo = 500;
+let valorDeVenda = 1300;
+let lucro = valorDeVenda - custo;
+let numDeVendas = 1000;
+
+if (numDeVendas === numDeVendas) {
+  console.log(lucro * numDeVendas)
+} else {
+  console.log('Erro!')
+}
+
+let salarioBruto = 5555;
+let salarioBase;
+let salarioLiquido;
+
+if (salarioBruto <=  1556.94){
+  salarioBase = salarioBruto - (0.08*salarioBruto);
+} else if (salarioBruto >= 1556.95 && salarioBruto <= 2594.92){
+  salarioBase = salarioBruto - (0.09*salarioBruto);
+} else if (salarioBruto >= 2594.93 && salarioBruto <= 5189.82){
+  salarioBase = salarioBruto - (0.11*salarioBruto);
+} else if (salarioBruto >= 5189.83){
+  salarioBase = salarioBruto - 570.88;
+}
+
+if (salarioBase <=  1903.98){
+  console.log('salario = '+ salarioBase + ' & ' +'Isento de Imposto de Renda');
+} else if (salarioBase >= 1903.99 && salarioBase <= 2826.65){
+  salarioLiquido = salarioBase - ((0.075*salarioBase) - 142.80)
+  console.log(salarioLiquido)
+} else if (salarioBase >= 2826.66 && salarioBase <= 3751.05){
+  salarioLiquido = salarioBase - ((0.15*salarioBase) - 354.80)
+  console.log(salarioLiquido)
+} else if (salarioBase >= 3751.06 && salarioBase <= 4664.68){
+  salarioLiquido = salarioBase - ((0.225*salarioBase) - 636.13)
+  console.log(salarioLiquido)
+} else if (salarioBase >= 4664.69 && salarioBase <= 5189.82){
+  salarioLiquido = salarioBase - ((0.275*salarioBase) - 869.36)
+  console.log(salarioLiquido)
+} 
+
