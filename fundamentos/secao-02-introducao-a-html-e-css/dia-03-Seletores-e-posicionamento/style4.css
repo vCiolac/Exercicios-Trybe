@@ -1,0 +1,32 @@
+div:hover {
+    border-top: 5px solid burlywood;
+    border-bottom: 5px solid darkcyan;
+}
+
+#bgdiv1 {
+    background-color: blue;
+}
+
+#bgdiv2 {
+    background-color: brown;
+}
+
+#bgdiv3 {
+    background-color: silver;
+    size: 1.5em;
+}
+
+#bgdiv4 {
+    background-color: darkblue;
+}
+
+#bgdiv5 {
+    background-color: aquamarine;
+}
+
+h3 {
+    font-family: fantasy;
+    font-size: 2em;
+    text-align: center;
+
+}

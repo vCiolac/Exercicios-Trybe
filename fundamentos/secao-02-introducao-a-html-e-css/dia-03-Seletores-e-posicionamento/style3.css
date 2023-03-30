@@ -1,0 +1,16 @@
+h1, p {
+    text-align: center;
+}
+ol:hover {
+    background-color: aquamarine;
+}
+.clicar:active {
+    color: blueviolet;
+}
+.list-style {
+    list-style: none
+}
+#motivos {
+    font-family: monospace;
+    line-height: 1.2em;
+}
