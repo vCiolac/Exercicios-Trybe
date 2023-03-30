@@ -71,3 +71,12 @@ console.log(umAoVtCinco);
 for (let index = 0; index < umAoVtCinco.length; index += 1){
   console.log(umAoVtCinco[index] + ' dividido por 2 dá: ' + umAoVtCinco[index] / 2);
 }
+
+// Lógica de programação e algoritmos
+
+let fatorial = 10;
+let dezFatorial = [];
+
+for (let index = fatorial; index <= fatorial; index -= 1){
+  let dezfatorial =('10! = ' + fatorial+ ' x ' + (index-1) + ' = ' + ((fatorial * index-1)));
+}
