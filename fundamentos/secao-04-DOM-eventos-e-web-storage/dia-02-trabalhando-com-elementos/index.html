@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Exercício</title>
+  <style>
+    section {
+      border-color: black;
+      border-style: solid;
+    }
+
+    .title {
+      text-align: center;
+    }
+
+    .main-content {
+      background-color: yellow;
+    }
+
+    .main-content .center-content {
+      background-color: red;
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .main-content .center-content p {
+      font-style: italic;
+    }
+
+    .main-content .left-content {
+      background-color: green;
+      width: 60%;
+      margin-left: 0;
+      margin-right: auto;
+    }
+
+    .main-content .left-content .small-image {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 100%;
+    }
+
+    .main-content .right-content {
+      background-color: blue;
+      width: 60%;
+      margin-left: auto;
+      margin-right: 0;
+    }
+
+    .main-content .description {
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <script>
+    const novoFiTexto = (pai, texto, elemento) => {
+      let returna = document.createElement(elemento);
+      returna.innerHTML = texto;
+      let papi = document.querySelector(pai);
+      return papi.appendChild(returna);
+    };
+    const novoFiClasse = (pai, nomeDaClasse, elemento) => {
+      let returna = document.createElement(elemento);
+      // returna.setAttribute('class', nomeDaClasse);
+      returna.className = nomeDaClasse;
+      let papi = document.querySelector(pai);
+      return papi.appendChild(returna);
+    };
+    novoFiTexto('body', 'TrybeTrip - Agência de Viagens', 'h1');
+    novoFiClasse('body', 'main-content', 'main');
+    novoFiClasse('main', 'center-content', 'section');
+    novoFiTexto('section', 'Meu texto é claro? -- escuro', 'p');
+    novoFiClasse('main', 'left-content', 'section');
+    novoFiClasse('main', 'right-content', 'section');
+    novoFiClasse('.right-content', 'small-img', 'img');
+    document.querySelector('img').src = 'https://picsum.photos/200';
+    novoFiTexto('.right-content', ['<li>um</li><li>dois</li><li>três</li><li>quatro</li><li>cinco</li><li>seis</li><li>sete</li><li>oito</li><li>nove</li><li>dez</li>'], 'ol');
+    novoFiTexto('main', 'H3', 'h3');
+    novoFiTexto('main', 'H3', 'h3');
+    novoFiTexto('main', 'H3', 'h3');
+    document.querySelector('h1').className = 'title';
+    const h3 = document.getElementsByTagName('h3');
+    for (let i = 0; i < 3; i += 1) {
+      h3[i].className = 'description';
+    }
+   const leftFilho = document.querySelector('.main-content').children[1];
+   leftFilho.parentElement.removeChild(leftFilho);
+  </script>
+</body>
+
+</html>
