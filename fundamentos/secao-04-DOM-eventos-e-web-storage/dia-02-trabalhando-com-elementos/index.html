@@ -1,0 +1,23 @@
+<main id="parent-of-parent">
+  <section id="parent">
+    <section id="first-child"></section>
+    <section id="where-are-you">
+      <section id="first-child-of-child"></section>
+    </section>
+    Attention!
+    <section id="third-child"></section>
+    <section id="fourth-and-last-child"></section>
+  </section>
+  <script>
+    const whereAre = document.getElementById('where-are-you');
+    whereAre.parentNode.style.color = 'red';
+    const addNele = document.getElementById('first-child-of-child');
+    addNele.textContent = 'Fiz certo?';
+    const paiDeTodos = document.getElementById('parent');
+    paiDeTodos.firstChild.textContent = "Meu primeiro filho?";
+    whereAre.previousElementSibling.textContent = 'Meu primo?';
+    whereAre.nextSibling.textContent = "Deixei de ser um attention?";
+    whereAre.nextElementSibling.textContent = "Qualé caçula!?";
+    paiDeTodos.lastElementChild.previousElementSibling.textContent = "Antes do ultimo?";
+  </script>
+</main>
