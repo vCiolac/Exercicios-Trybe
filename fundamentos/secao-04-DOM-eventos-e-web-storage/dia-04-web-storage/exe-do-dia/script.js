@@ -24,6 +24,13 @@ const changeFontFamily = (event) => {
 const changeLineHeight = (event) => {
   event.target.style.lineHeight = event.target.textContent;
 };
+const reset = (event) => {
+  event.target.style.backgroundColor = null;
+  event.target.style.lineHeight = null;
+  event.target.style.fontFamily = null;
+  event.target.style.fontSize = null;
+  event.target.style.color = null;
+};
 
 buttonsBg.forEach((button) => {
   button.addEventListener('mouseover', changeColor);
@@ -39,4 +46,20 @@ buttonsFontFamily.forEach((button) => {
 });
 buttonslineHeight.forEach((button) => {
   button.addEventListener('mouseover', changeLineHeight);
+});
+//reset
+buttonsBg.forEach((button) => {
+  button.addEventListener('mouseout', reset);
+});
+buttonsFontColor.forEach((button) => {
+  button.addEventListener('mouseout', reset);
+});
+buttonsFontSize.forEach((button) => {
+  button.addEventListener('mouseout', reset);
+});
+buttonsFontFamily.forEach((button) => {
+  button.addEventListener('mouseout', reset);
+});
+buttonslineHeight.forEach((button) => {
+  button.addEventListener('mouseout', reset);
 });
