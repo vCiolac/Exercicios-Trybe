@@ -160,3 +160,21 @@ const applySavedSettings = () => {
 
 applySavedSettings();
 
+//firula - botao reset
+
+const section = document.querySelector('#font-family');
+const button = document.createElement('button');
+button.textContent = 'RESETA TUDO';
+button.id = 'reset-button';
+section.appendChild(button);
+
+const idResetButton = document.getElementById('reset-button')
+
+idResetButton.addEventListener('click', () => {
+  localStorage.clear();
+  location.reload();
+});
+
+
+
+
