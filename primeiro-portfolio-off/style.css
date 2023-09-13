@@ -1,0 +1,114 @@
+#topbuttons {
+    text-align: center;
+}
+.button {
+	box-shadow:inset 0px 1px 0px 0px #91b8b3;
+	background:linear-gradient(to bottom, #768d87 5%, #6c7c7c 100%);
+	background-color:#768d87;
+	border-radius:3px;
+	border:1px solid #566963;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+    font-family: 'Cairo Play', cursive;
+	font-size:14px;
+	padding:6px 12px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2b665e;
+}
+.button:hover {
+	background:linear-gradient(to bottom, #6c7c7c 5%, #768d87 100%);
+	background-color:#6c7c7c;
+}
+.button:active {
+	position:relative;
+	top:1px;
+}
+
+body {
+    background: transparent url('./images/background.png');
+    background-attachment: fixed;
+    background-size: 100%;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+}
+
+.firstBlock {
+    padding-top: var(--wp--style--root--padding-top);
+    padding-bottom: var(--wp--style--root--padding-bottom);
+}
+
+.firstBlock > * {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.blockIMG.alignfull img, .blockIMG.alignwide img {
+    height: auto;
+    width: 100%;
+}
+
+body .is-layout-constrained > .alignwide {
+    max-width: var(--wp--style--global--wide-size);
+}
+
+.title {
+    height: 280px;
+    margin-left: 180px;
+}
+
+h1 {
+    font-family: 'Noto Serif', serif;
+    text-align: left;
+}
+
+#avatar {
+    border-radius: 75%;
+    width: 280px;
+    float: left;
+    margin-right: 20px;
+    margin-left: 5px;
+    margin-bottom: 20px;
+}
+
+.introducao {
+    font-size: 15px;
+    font-weight: 40px;
+    font-family: monospace;
+}
+
+.div-habilidades {
+    clear: both;
+    margin-left: 180px;
+}
+
+.div-conhecimentos {
+    height: 500px;
+    overflow-y: auto;
+    overflow-x: auto;
+    margin-left: 180px;
+}
+
+ul li:hover {
+    font-weight: bold;
+}
+
+h2 {
+    font-family: 'Noto Serif', serif;
+}
+
+#sobre {
+    margin-left: 6px;
+}
+.tail-buttons {
+    background-color: #077187;
+    border-radius: 10px;
+    width: 180px;
+    height: 20px;
+    padding: 8px;
+    text-align: center;
+    font-weight: 900;
+    font-family: 'Cairo Play', cursive;
+    padding-top: 0.1px;
+    display: inline-block;
+}
