@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "IeiZul9FLIgs6VmhZy4ww+flyGV0BC++f9DTRylzA6Kg4UhOBVdF22oFwc8DPOAScln7RxrxvAk1QAsdYFb0xg==",
+  "success": true,
+  "projectFilePath": "/home/victor/area-de-trabalho/trybe-exercicios/csharp/criando-api/criando-api.csproj",
+  "expectedPackageFiles": [
+    "/home/victor/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5/microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "/home/victor/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",
+    "/home/victor/.nuget/packages/swashbuckle.aspnetcore/6.5.0/swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
+    "/home/victor/.nuget/packages/swashbuckle.aspnetcore.swagger/6.5.0/swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
+    "/home/victor/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.5.0/swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
+    "/home/victor/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.5.0/swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}
